@@ -442,8 +442,7 @@ function onButtonUpgradeClick()
     mineral -= mineralToUpgrade;
     upgradeSound.play();
   }
-
-  if (gameState === 'state_multi')
+  else if (gameState === 'state_multi')
     disabledSound.play();
 }
 
